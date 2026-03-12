@@ -177,15 +177,28 @@ export const jobs = [
   {
     id: 1,
     title: "Mechanical Engineer",
-    department: "Maintenance",
-    location: "Nanded",
-    status: "open"
+    titleMr: "यांत्रिक अभियंता",
+    icon: "⚙️",
+    vacancies: 2,
+    qualification: "B.E. Mechanical",
+    open: true
   },
   {
     id: 2,
     title: "Plant Operator",
-    department: "Production",
-    location: "Nanded",
-    status: "open"
+    titleMr: "प्लांट ऑपरेटर",
+    icon: "🏭",
+    vacancies: 3,
+    qualification: "Diploma Mechanical",
+    open: true
+  },
+  {
+    id: 3,
+    title: "Account Officer",
+    titleMr: "लेखा अधिकारी",
+    icon: "📊",
+    vacancies: 1,
+    qualification: "B.Com / M.Com",
+    open: false
   }
 ]

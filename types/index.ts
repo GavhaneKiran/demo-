@@ -34,9 +34,11 @@ export interface Project {
 export interface Job {
   id: number
   title: string
-  department: string
-  location: string
-  status: "open" | "closed"
+  titleMr: string
+  icon: string
+  vacancies: number
+  qualification: string
+  open: boolean
 }
 
 export type Language = "en" | "mr";
