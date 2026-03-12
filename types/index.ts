@@ -38,7 +38,8 @@ export interface Job {
   icon: string
   vacancies: number
   qualification: string
-  open: boolean
+  type: string
+  status: "open" | "closed"
 }
 
 export type Language = "en" | "mr";

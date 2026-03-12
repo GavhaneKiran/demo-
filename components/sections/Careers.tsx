@@ -1,3 +1,4 @@
+
 import { jobs } from "@/lib/data";
 import type { Job } from "@/types";
 
@@ -10,6 +11,8 @@ const ELIGIBILITY = [
 ];
 
 function JobCard({ job }: { job: Job }) {
+  const isOpen = job.status === "open";
+
   return (
     <div
       className="rounded-lg p-5 flex gap-4 items-start transition-all duration-200 hover:shadow-md"
@@ -42,12 +45,12 @@ function JobCard({ job }: { job: Job }) {
           <span
             className="text-[11px] font-semibold px-2.5 py-1 rounded-full"
             style={
-              job.open
+              isOpen
                 ? { background: "#e8f5e9", color: "#2d6a4f" }
                 : { background: "#eee", color: "#999" }
             }
           >
-            {job.open ? "🟢 Open" : "Closed"}
+            {isOpen ? "🟢 Open" : "Closed"}
           </span>
 
           {/* Vacancies */}
@@ -71,22 +74,33 @@ function JobCard({ job }: { job: Job }) {
           >
             {job.qualification}
           </span>
+
+          {/* Job Type */}
+          <span
+            className="text-[11px] px-2.5 py-1 rounded-full"
+            style={{
+              background: "var(--cream-dark)",
+              color: "var(--muted)",
+            }}
+          >
+            {job.type}
+          </span>
         </div>
       </div>
 
       {/* Apply Button */}
       <div className="self-center">
         <a
-          href={job.open ? "#" : undefined}
+          href={isOpen ? "#" : undefined}
           className="px-4 py-2 rounded text-sm font-semibold whitespace-nowrap inline-block"
           style={{
-            background: job.open ? "var(--green)" : "#aaa",
+            background: isOpen ? "var(--green)" : "#aaa",
             color: "white",
             textDecoration: "none",
-            pointerEvents: job.open ? "auto" : "none",
+            pointerEvents: isOpen ? "auto" : "none",
           }}
         >
-          {job.open ? "Apply" : "Closed"}
+          {isOpen ? "Apply" : "Closed"}
         </a>
       </div>
     </div>
