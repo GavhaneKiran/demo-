@@ -81,7 +81,7 @@ export default function CareersSection() {
             {jobs.map((job) => (
               <div
                 key={job.id}
-                className="border-[1.5px] border-[#ddd0b8] rounded-lg bg-[#fdf6ec] px-5 py-5 flex gap-4 items-start hover:border-[#7c3a1e] hover:shadow-[0_4px_14px_rgba(124,58,30,0.09)] transition-all"
+                className="border-[1.5px] border-[#ddd0b8] rounded-lg bg-[#fdf6ec] px-5 py-5 flex flex-col sm:flex-row gap-4 items-start sm:items-center hover:border-[#7c3a1e] hover:shadow-[0_4px_14px_rgba(124,58,30,0.09)] transition-all"
               >
 
                 {/* Icon */}
@@ -132,7 +132,7 @@ export default function CareersSection() {
                 </div>
 
                 {/* Apply Button */}
-                <div className="self-center">
+                <div className="self-stretch sm:self-center mt-3 sm:mt-0 text-right sm:text-left">
                   <button
                     disabled={job.status === "closed"}
                     className={`px-4 py-2 rounded text-xs font-semibold whitespace-nowrap transition-colors ${

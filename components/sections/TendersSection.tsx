@@ -77,7 +77,7 @@ export default function TendersSection() {
           {filtered.map((tender) => (
             <div
               key={tender.id}
-              className={`relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:rounded-l border-[1.5px] border-[#ddd0b8] rounded-lg bg-[#fdf6ec] hover:border-[#7c3a1e] hover:shadow-md transition-all grid grid-cols-[auto_1fr_auto] gap-4 items-center px-6 py-5 ${borderStyles[tender.badge]}`}
+              className={`relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:rounded-l border-[1.5px] border-[#ddd0b8] rounded-lg bg-[#fdf6ec] hover:border-[#7c3a1e] hover:shadow-md transition-all grid grid-cols-1 sm:grid-cols-[auto_1fr_auto] gap-4 sm:items-center px-4 sm:px-6 py-4 sm:py-5 ${borderStyles[tender.badge]}`}
             >
 
               {/* Badge */}
