@@ -123,5 +123,28 @@ export const jobs: Job[] = [
     qualification: "B.Com / M.Com",
     type: "Full Time",
     status: "closed",
+  }
+];
+
+export const stats = [
+  {
+    label: "Member Farmers",
+    labelMr: "सभासद शेतकरी",
+    value: "18,000+",
+  },
+  {
+    label: "Crushing Capacity",
+    labelMr: "गाळप क्षमता",
+    value: "5,000 TCD",
+  },
+  {
+    label: "Years of Service",
+    labelMr: "सेवेची वर्षे",
+    value: "50+",
+  },
+  {
+    label: "Cane Area",
+    labelMr: "ऊस क्षेत्र",
+    value: "32,000 Acres",
   },
 ];
