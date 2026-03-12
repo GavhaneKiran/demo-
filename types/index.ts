@@ -32,13 +32,11 @@ export interface Project {
 }
 
 export interface Job {
-  id: string;
-  icon: string;
-  title: string;
-  titleMr: string;
-  vacancies: number;
-  qualification: string;
-  open: boolean;
+  id: number
+  title: string
+  department: string
+  location: string
+  status: "open" | "closed"
 }
 
 export type Language = "en" | "mr";

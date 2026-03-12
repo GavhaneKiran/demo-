@@ -173,10 +173,19 @@ export const projects: Project[] = [
   },
 ];
 
-export const jobs: Job[] = [
-  { id: "1", icon: "⚙️", title: "Junior Engineer – Mechanical", titleMr: "कनिष्ठ अभियंता – यांत्रिकी", vacancies: 2, qualification: "Diploma/B.E. Mech", open: true },
-  { id: "2", icon: "🧪", title: "Chemist – Sugar Lab", titleMr: "रसायनशास्त्रज्ञ – साखर प्रयोगशाळा", vacancies: 1, qualification: "B.Sc. Chemistry", open: true },
-  { id: "3", icon: "💻", title: "IT / Web Executive", titleMr: "माहिती तंत्रज्ञान कार्यकारी", vacancies: 1, qualification: "B.Tech / BCA", open: true },
-  { id: "4", icon: "🌾", title: "Field Supervisor – Cane Development", titleMr: "क्षेत्र पर्यवेक्षक – ऊस विकास", vacancies: 4, qualification: "B.Sc. Agri", open: false },
-  { id: "5", icon: "📊", title: "Accounts Clerk", titleMr: "लेखा लिपिक", vacancies: 3, qualification: "B.Com / M.Com", open: true },
-];
+export const jobs = [
+  {
+    id: 1,
+    title: "Mechanical Engineer",
+    department: "Maintenance",
+    location: "Nanded",
+    status: "open"
+  },
+  {
+    id: 2,
+    title: "Plant Operator",
+    department: "Production",
+    location: "Nanded",
+    status: "open"
+  }
+]
