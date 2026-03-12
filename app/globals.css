@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ── Earthy Harvest Palette ── */
+  --primary:      #7c3a1e;   /* deep terracotta / burnt sienna */
+  --primary-mid:  #a0522d;   /* sienna brown */
+  --primary-light:#c97d4e;   /* warm clay */
+  --accent:       #e8a020;   /* harvest wheat gold */
+  --accent-dark:  #b87c10;   /* deeper gold */
+  --cream:        #fdf6ec;   /* warm off-white */
+  --cream-dark:   #f2e8d5;   /* warm sand */
+  --border:       #ddd0b8;   /* warm border */
+  --muted:        #6b5744;   /* warm brown-grey */
+  --text:         #2c1a0e;   /* rich dark brown */
+  --footer-bg:    #1e0f06;   /* very dark brown */
+
+  /* keep these aliases so old code still works */
+  --green:        var(--primary);
+  --green-mid:    var(--primary-mid);
+  --green-light:  var(--primary-light);
+  --amber:        var(--accent);
+  --amber-dark:   var(--accent-dark);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+.font-display { font-family: 'Playfair Display', serif; }
+.font-marathi { font-family: 'Tiro Devanagari Marathi', serif; }
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker { animation: ticker 30s linear infinite; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeUp { animation: fadeUp 0.7s ease both; }
+.animate-fadeUp-delay { animation: fadeUp 0.7s ease 0.2s both; }
